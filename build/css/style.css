@@ -196,7 +196,7 @@ body.locked {
       -ms-flex-align: center;
           align-items: center;
   gap: 41px;
-  padding: 18px;
+  padding: 18px 20px 18px 30px;
 }
 
 .contentmain__footertext {
@@ -215,6 +215,7 @@ body.locked {
   background-color: #EB3D35;
   font-size: 24px;
   color: #FFFFFF;
+  white-space: nowrap;
 }
 
 @media (max-width: 1199.98px) {
@@ -273,8 +274,13 @@ body.locked {
   }
 
   .contentmain__btn {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 15px 15px 15px 20px;
+    gap: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
   }
 }

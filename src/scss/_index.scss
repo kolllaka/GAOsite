@@ -72,9 +72,11 @@
 		display: flex;
 		align-items: center;
 		gap: 41px;
-		padding: 18px;
+		padding: 18px 20px 18px 30px;
 		@media (max-width:$breakpoint480) {
-			justify-content: space-between;
+			justify-content: space-around;
+			padding: 15px 15px 15px 20px;
+			gap: 20px;
 		}
 	}
 	// .contentmain__footertext
@@ -97,6 +99,10 @@
 
 	font-size: 24px;
 	color: #FFFFFF;
+	white-space: nowrap;
+	@media (max-width:$breakpoint480) {
+		font-size: 20px;
+	}
 }
 
 
