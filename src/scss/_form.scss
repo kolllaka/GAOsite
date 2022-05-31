@@ -9,10 +9,16 @@
 	// .form__icon
 	&__icon {
 		margin-bottom: 90px;
+		@media (max-width:$breakpoint480) {
+			margin-bottom: 40px;
+		}
 	}
 	// .form__header
 	&__header {
 		margin-bottom: 60px;
+		@media (max-width:$breakpoint480) {
+			margin-bottom: 20px;
+		}
 	}
 	// .form__content
 	&__content {
@@ -25,19 +31,35 @@
 		margin-top: auto;
 		display: flex;
 		gap: 20px;
+		@media (max-width:$breakpoint480) {
+			gap: 10px;
+		}
 	}
 	// .form__btn
 	&__btn {
+		@media (max-width:$breakpoint480) {
+			padding: 18px 30px;
+			flex: 1 1 50%;
+		}
 	}
 }
-.container {
-}
+
 .headerform {
 	display: flex;
+	@media (max-width:$breakpoint480) {
+		justify-content: center;
+	}
 	&__icons{
 		display: flex;
 		gap: 100px;
 		position: relative;
+		@media (max-width:$breakpoint768) {
+			gap: 40px;
+		}
+		@media (max-width:$breakpoint480) {
+			justify-content: space-between;
+			gap: 30px;
+		}
 	}
 	// .headerform__icon
 	&__icon {
@@ -50,7 +72,14 @@
 		background: $white;
 		border: 2px solid $lightgray;
 		border-radius: 50px;
-		
+		@media (max-width:$breakpoint480) {
+			width: 30px;
+			height: 30px;
+			flex: 0 0 30px;
+			svg{
+				width: 20px;
+			}
+		}
 	}
 	// .headerform__progres
 	&__progres {

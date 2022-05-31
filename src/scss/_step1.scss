@@ -13,8 +13,12 @@
 	}
 	// .step1__content
 	&__content {
+		margin-bottom: 60px;
 	}
 }
+
+
+
 .contentstep1 {
 	// .contentstep1__title
 	&__title {
@@ -25,10 +29,22 @@
 		display: flex;
 		gap: 20px;
 		flex-wrap: wrap;
+		@media (max-width:$breakpoint1200) {
+			column-gap: 50px;
+		}
+		@media (max-width:$breakpoint768) {
+			column-gap: 0px;
+		}
 	}
 	// .contentstep1__item
 	&__item {
 		flex: 0 0 32%;
+		@media (max-width:$breakpoint1200) {
+			flex: 0 0 40%;
+		}
+		@media (max-width:$breakpoint768) {
+			flex: 0 0 100%;
+		}
 	}
 }
 .itemcontentstep1 {

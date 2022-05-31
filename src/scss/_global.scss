@@ -63,6 +63,9 @@ body {
 }
 .btn {
 	background-color: $orange;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	padding: 18px 49px;
 	font-size: 22px;
@@ -80,6 +83,35 @@ body {
 	}
 	// .btn__next
 	&__next {
+	}
+}
+
+.search {
+	height: 20px;
+	max-width: 460px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	//padding: 20px 30px;
+	input{
+		width: 100%;
+		padding: 20px 20px 20px 65px;
+		border: 1px solid #E5E4E1;
+
+		font-weight: 400;
+		font-size: 18px;
+		line-height: calc(20 / 18 * 100%);
+		color: $gray;
+	}
+	// .search__img
+	&__img {
+		position: absolute;
+		left: 30px;
+		top: 50%;
+		transform: translateY(-50%);
+		@media (max-width:$breakpoint480) {
+			left: 20px;
+		}
 	}
 }
 
