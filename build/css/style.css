@@ -626,14 +626,14 @@ p {
   }
 
   .headerform__icon {
-    width: 30px;
-    height: 30px;
+    width: 11vw;
+    height: 11vw;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 30px;
-            flex: 0 0 30px;
+        -ms-flex: 0 0 11vw;
+            flex: 0 0 11vw;
   }
 
   .headerform__icon svg {
-    width: 20px;
+    width: 8vw;
   }
 }

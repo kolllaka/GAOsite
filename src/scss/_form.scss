@@ -73,11 +73,11 @@
 		border: 2px solid $lightgray;
 		border-radius: 50px;
 		@media (max-width:$breakpoint480) {
-			width: 30px;
-			height: 30px;
-			flex: 0 0 30px;
+			width: 11vw;
+			height: 11vw;
+			flex: 0 0 11vw;
 			svg{
-				width: 20px;
+				width: 8vw;
 			}
 		}
 	}
