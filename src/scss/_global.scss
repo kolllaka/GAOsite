@@ -29,7 +29,7 @@ body {
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.1;
-	color: #747887;
+	color: $gray;
 
 	min-height: 100vh;
 	width: 100vw;
@@ -60,4 +60,42 @@ body {
 		left: 0;
 		object-fit: cover;
 	}
+}
+.btn {
+	background-color: $orange;
+
+	padding: 18px 49px;
+	font-size: 22px;
+	color: $white;
+	white-space: nowrap;
+	
+	@media (max-width:$breakpoint480) {
+		font-size: 20px;
+	}
+	// .btn__back
+	&__back {
+		background: $white;
+		border: 1px solid $lightgray;
+		color: $blue;
+	}
+	// .btn__next
+	&__next {
+	}
+}
+
+h1{
+	font-size: 50px;
+	line-height: calc(56 / 50 * 100%);
+	color:$blue;
+}
+h2{
+	font-size: 25px;
+	line-height: calc(28 / 25 * 100%);
+	color: $blue;
+}
+p{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: calc(22 / 20 * 100%);
+	color: $gray;
 }
