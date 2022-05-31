@@ -414,12 +414,17 @@ p {
   display: none;
 }
 
-.itemcontentstep1 input:checked ~ .itemcontentstep1__fakeicon span {
+.itemcontentstep1 input:checked ~ .itemcontentstep1__fakeicon-radio span {
   border: 1px solid #EB3D35;
 }
 
-.itemcontentstep1 input:checked ~ .itemcontentstep1__fakeicon span::after {
+.itemcontentstep1 input:checked ~ .itemcontentstep1__fakeicon-radio span::after {
   opacity: 1;
+}
+
+.itemcontentstep1 input:checked ~ .itemcontentstep1__fakeicon-checkbox span {
+  border: 1px solid #EB3D35;
+  background-color: #EB3D35;
 }
 
 .itemcontentstep1 input:checked ~ .itemcontentstep1__border {
@@ -442,7 +447,7 @@ p {
   height: 40px;
 }
 
-.itemcontentstep1__city {
+.itemcontentstep1__name {
   z-index: 1;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
@@ -450,11 +455,11 @@ p {
   padding: 10px 10px;
 }
 
-.itemcontentstep1__fakeicon {
+.itemcontentstep1__fakeicon-radio {
   margin-left: auto;
 }
 
-.itemcontentstep1__fakeicon span {
+.itemcontentstep1__fakeicon-radio span {
   display: block;
   z-index: 1;
   margin: 15px 15px 15px 5px;
@@ -469,7 +474,7 @@ p {
   position: relative;
 }
 
-.itemcontentstep1__fakeicon span::after {
+.itemcontentstep1__fakeicon-radio span::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -482,6 +487,42 @@ p {
   border-radius: 50%;
   background-color: #EB3D35;
   opacity: 0;
+}
+
+.itemcontentstep1__fakeicon-checkbox {
+  margin-left: auto;
+}
+
+.itemcontentstep1__fakeicon-checkbox span {
+  display: block;
+  z-index: 1;
+  margin: 15px 15px 15px 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E4E1;
+  position: relative;
+}
+
+.itemcontentstep1__fakeicon-checkbox span::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 15px;
+  height: 10px;
+  border-bottom: 3px solid #FFFFFF;
+  border-left: 3px solid #FFFFFF;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .itemcontentstep1__border {
