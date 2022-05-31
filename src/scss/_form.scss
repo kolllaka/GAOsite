@@ -25,6 +25,11 @@
 	}
 	// .form__step
 	&__step {
+		display: none;
+
+		&.active{
+			display: block;
+		}
 	}
 	// .form__buttons
 	&__buttons {
@@ -80,6 +85,15 @@
 				width: 8vw;
 			}
 		}
+		&.active{
+			transition: all 1s ease;
+			background: $orange;
+			border: none;
+			path{
+				transition: all 1s ease;
+				fill: $white;
+			}
+		}
 	}
 	// .headerform__progres
 	&__progres {
@@ -93,6 +107,7 @@
 	}
 	// .headerform__success
 	&__success {
+		transition: all .5s ease;
 		height: 2px;
 		width: 50%;
 		background-color: $orange;
