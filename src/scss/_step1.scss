@@ -6,14 +6,23 @@
 	// .step1__text
 	&__text {
 		margin-bottom: 40px;
+		@media (max-width:$breakpoint480) {
+			margin-bottom: 20px;
+		}
 	}
 	// .step1__search
 	&__search {
 		margin-bottom: 60px;
+		@media (max-width:$breakpoint480) {
+			margin-bottom: 30px;
+		}
 	}
 	// .step1__content
 	&__content {
 		margin-bottom: 60px;
+		@media (max-width:$breakpoint480) {
+			margin-bottom: 30px;
+		}
 	}
 }
 
