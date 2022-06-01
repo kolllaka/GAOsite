@@ -346,6 +346,10 @@ p {
   gap: 20px;
 }
 
+.form__finish {
+  display: none;
+}
+
 .headerform {
   display: -webkit-box;
   display: -ms-flexbox;

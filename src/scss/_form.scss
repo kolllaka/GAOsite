@@ -47,6 +47,11 @@
 			flex: 1 1 50%;
 		}
 	}
+
+	// .form__finish
+	&__finish {
+		display: none;
+	}
 }
 
 .headerform {
