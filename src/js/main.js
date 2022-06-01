@@ -6,7 +6,7 @@ function stepForm() {
 		icons = form.querySelectorAll('.headerform__icon'),
 		progress = form.querySelector('.headerform__success');
 
-	let stepIndex = 3;
+	let stepIndex = 0;
 	updateForm()
 
 	backBtn.addEventListener('click', e => {
