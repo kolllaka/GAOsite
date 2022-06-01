@@ -654,6 +654,7 @@ p {
   font-size: 20px;
   line-height: 110%;
   color: #051655;
+  white-space: nowrap;
 }
 
 .interested__cat:not(:last-child) {
