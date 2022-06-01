@@ -318,6 +318,10 @@ p.finishtext {
   color: #C35B48;
 }
 
+.form {
+  margin-left: -200px;
+}
+
 .form__body {
   display: -webkit-box;
   display: -ms-flexbox;
