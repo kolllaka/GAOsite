@@ -21,7 +21,9 @@
 		max-width: none;
 	}
 }
-
+html{
+	overflow-x: hidden;
+}
 // Body
 body {
 	font-family: $fontMain;
