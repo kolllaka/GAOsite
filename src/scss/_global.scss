@@ -73,6 +73,13 @@ body {
 	font-size: 22px;
 	color: $white;
 	white-space: nowrap;
+	&:hover{
+		color: $orange;
+		background: $blue;
+		path{
+			fill: $orange;
+		}
+	}
 	
 	@media (max-width:$breakpoint480) {
 		font-size: 20px;
@@ -82,9 +89,16 @@ body {
 		background: $white;
 		border: 1px solid $lightgray;
 		color: $blue;
+		&:hover{
+			background: $blue;
+			color: $white;
+		}
 	}
 	// .btn__next
 	&__next {
+	}
+	&:active{
+		opacity: 0.5;
 	}
 }
 

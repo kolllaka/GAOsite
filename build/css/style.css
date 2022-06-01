@@ -149,10 +149,28 @@ body.locked {
   white-space: nowrap;
 }
 
+.btn:hover {
+  color: #EB3D35;
+  background: #051655;
+}
+
+.btn:hover path {
+  fill: #EB3D35;
+}
+
 .btn__back {
   background: #FFFFFF;
   border: 1px solid #E5E4E1;
   color: #051655;
+}
+
+.btn__back:hover {
+  background: #051655;
+  color: #FFFFFF;
+}
+
+.btn:active {
+  opacity: 0.5;
 }
 
 .input {
