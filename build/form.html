@@ -73,9 +73,10 @@
 	<div class="step1__text">
 		<p>We are active in major cities and we schedule meetings based on time zones. Let us know your home base.</p>
 	</div>
-	<div class="step1__search search">
-		<input type="text" placeholder="Search your hub..">
-		<div class="search__img">
+
+	<label class="step1__search input"">
+		<input type=" url" placeholder="Search your hub..">
+		<div class="input__img">
 			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M9.58329 18.125C4.87496 18.125 1.04163 14.2916 1.04163 9.58329C1.04163 4.87496 4.87496 1.04163 9.58329 1.04163C14.2916 1.04163 18.125 4.87496 18.125 9.58329C18.125 14.2916 14.2916 18.125 9.58329 18.125ZM9.58329 2.29163C5.55829 2.29163 2.29163 5.56663 2.29163 9.58329C2.29163 13.6 5.55829 16.875 9.58329 16.875C13.6083 16.875 16.875 13.6 16.875 9.58329C16.875 5.56663 13.6083 2.29163 9.58329 2.29163Z"
@@ -85,7 +86,9 @@
 					fill="#747887" />
 			</svg>
 		</div>
-	</div>
+		<div class="input__border"></div>
+	</label>
+
 	<div class="step1__content contentstep1">
 		<h2 class="contentstep1__title">Popular Hub</h2>
 		<div class="contentstep1__body">
@@ -332,7 +335,175 @@
 	</div>
 </div>
 					</div>
-					<div class="form__step">4</div>
+					<div class="form__step">
+						<div class="step1">
+	<h1 class="step1__title">What Are You Interested In?</h1>
+	<div class="step1__text">
+		<p>Select from the list and add your own interests.</p>
+	</div>
+	<label class="step1__search input"">
+			<input type=" url" placeholder="Add Your Interest">
+		<div class="input__img">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M9.58329 18.125C4.87496 18.125 1.04163 14.2916 1.04163 9.58329C1.04163 4.87496 4.87496 1.04163 9.58329 1.04163C14.2916 1.04163 18.125 4.87496 18.125 9.58329C18.125 14.2916 14.2916 18.125 9.58329 18.125ZM9.58329 2.29163C5.55829 2.29163 2.29163 5.56663 2.29163 9.58329C2.29163 13.6 5.55829 16.875 9.58329 16.875C13.6083 16.875 16.875 13.6 16.875 9.58329C16.875 5.56663 13.6083 2.29163 9.58329 2.29163Z"
+					fill="#747887" />
+				<path
+					d="M18.3333 18.9583C18.175 18.9583 18.0166 18.9 17.8916 18.775L16.225 17.1083C15.9833 16.8666 15.9833 16.4666 16.225 16.225C16.4666 15.9833 16.8666 15.9833 17.1083 16.225L18.775 17.8916C19.0166 18.1333 19.0166 18.5333 18.775 18.775C18.65 18.9 18.4916 18.9583 18.3333 18.9583Z"
+					fill="#747887" />
+			</svg>
+		</div>
+		<div class="input__border"></div>
+	</label>
+
+	<div class="step1__content interested">
+		<!-- Category -->
+		<div class="interested__cat">
+			<h2 class="interested__title">Business</h2>
+			<div class="interested__items">
+				<label class="interested__item">
+					<input type="checkbox" name="business">
+					<div class="interested__titleitem">Enterpreneurship</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="business" checked>
+					<div class="interested__titleitem">Marketing</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="business">
+					<div class="interested__titleitem">Sales</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="business" checked>
+					<div class="interested__titleitem">Consulting</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="business">
+					<div class="interested__titleitem">E-commerce</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="business">
+					<div class="interested__titleitem">Retail</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="business">
+					<div class="interested__titleitem">Real Estate</div>
+					<div class="interested__border"></div>
+				</label>
+			</div>
+		</div>
+		<!-- Category -->
+		<div class="interested__cat">
+			<h2 class="interested__title">Investing & Finance</h2>
+			<div class="interested__items">
+				<label class="interested__item">
+					<input type="checkbox" name="IandF">
+					<div class="interested__titleitem">Angle Investing</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="IandF" checked>
+					<div class="interested__titleitem">Crypto</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="IandF">
+					<div class="interested__titleitem">Quant Finance</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="IandF" checked>
+					<div class="interested__titleitem">Venture Capital</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="IandF">
+					<div class="interested__titleitem">Investment Banking</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="IandF">
+					<div class="interested__titleitem">Economics</div>
+					<div class="interested__border"></div>
+				</label>
+			</div>
+		</div>
+		<!-- Category -->
+		<div class="interested__cat">
+			<h2 class="interested__title">Lifestyle</h2>
+			<div class="interested__items">
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Travel</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle" checked>
+					<div class="interested__titleitem">Fitness</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Food</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle" checked>
+					<div class="interested__titleitem">Gaming</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Writing</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Reading</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Dinner Parties</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Poker</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Chess</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Cooking</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Wellness</div>
+					<div class="interested__border"></div>
+				</label>
+				<label class="interested__item">
+					<input type="checkbox" name="lifestyle">
+					<div class="interested__titleitem">Parenting</div>
+					<div class="interested__border"></div>
+				</label>
+			</div>
+		</div>
+
+	</div>
+</div>
+					</div>
 					<div class="form__step">5</div> 
 				</div>
 
