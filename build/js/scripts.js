@@ -41,6 +41,7 @@ function stepForm() {
 			backBtn.style.display = 'none';
 			nextBtn.style.display = 'none';
 			finish.style.display = 'block';
+			document.title = 'Finish';
 
 			return
 		};
@@ -50,6 +51,7 @@ function stepForm() {
 
 		prosent = (stepIndex / (steps.length - 1)) * 100 + '%';
 		progress.style.width = prosent;
+		document.title = 'Step ' + (stepIndex + 1);
 	};
 };
 if (form) {
