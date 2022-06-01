@@ -73,7 +73,7 @@ h6 {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1160px;
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
@@ -319,7 +319,7 @@ p.finishtext {
 }
 
 .form {
-  margin-left: -200px;
+  margin-left: calc(-200 * (100vw - 1200px) / 720);
 }
 
 .form__body {
@@ -826,6 +826,10 @@ p.finishtext {
 
   .contentmain {
     margin: 48px 50px 40px;
+  }
+
+  .form {
+    margin-left: 0;
   }
 
   .contentstep1__body {

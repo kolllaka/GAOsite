@@ -1,5 +1,8 @@
 .form {
-	margin-left: -200px;
+	margin-left: calc((0 - 200)*(100vw - 1200px)/(1920 - 1200));
+	@media (max-width:$breakpoint1200) {
+		margin-left: 0;
+	}
 	// .form__body
 	&__body {
 		display: flex;
