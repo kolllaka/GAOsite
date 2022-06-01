@@ -89,14 +89,13 @@ body {
 }
 
 .input {
-	padding: 20px;
-	border: 1px solid #E5E4E1;
+	padding: 20px 30px;
 	display: flex;
 	align-items: center;
 	position: relative;
 	cursor: text;
 	input{
-		padding-left: 45px;
+		padding-left: 35px;
 
 		font-weight: 400;
 		font-size: 18px;
@@ -105,7 +104,7 @@ body {
 
 		&:focus ~ .input__border{
 			transition: all 0.3s ease 0s;
-			opacity: 1;
+			border: 1px solid $orange;
 		}
 		&:focus ~ .input__img{
 			transition: all 0.3s ease;
@@ -125,8 +124,8 @@ body {
 		left: 0;
 		bottom: 0;
 		right: 0;
-		border: 1px solid $orange;
-		opacity: 0;
+		border: 1px solid $lightgray;
+		transition: all 0.3s ease 0s;
 	}
 }
 

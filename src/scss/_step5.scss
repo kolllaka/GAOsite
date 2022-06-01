@@ -1,0 +1,43 @@
+.aboutu {
+	// .aboutu__body
+	&__body {
+	}
+	// .aboutu__inputs
+	&__inputs {
+		display: flex;
+		gap: 10px;
+		margin-bottom: 10px;
+		@media (max-width:$breakpoint768) {
+			flex-wrap: wrap;
+		}
+	}
+	// .aboutu__input
+	&__input {
+		width: 100%;
+	}
+	// .aboutu__textarea
+	&__textarea {
+	}
+}
+
+.textarea {
+	width: 100vw;
+	textarea{
+		width: 100%;
+		min-height: 240px;
+		resize: none;
+		display: flex;
+		padding: 20px 30px;
+		border: 1px solid $lightgray;
+		transition: all 0.3s ease 0s;
+
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 20px;
+		color: #747887;
+		&:focus{
+			transition: all 0.3s ease 0s;
+			border: 1px solid $orange;
+		}
+	}
+}
