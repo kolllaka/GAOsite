@@ -227,6 +227,14 @@ p {
   color: #747887;
 }
 
+p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+p.finishtext {
+  line-height: 125%;
+}
+
 .main {
   width: 100%;
   height: 100vh;
@@ -771,6 +779,42 @@ p {
   border: 1px solid #EB3D35;
 }
 
+.finish {
+  width: 55%;
+}
+
+.finish__icon {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.finish__content {
+  margin-bottom: 60px;
+}
+
+.finish__title {
+  margin-bottom: 10px;
+}
+
+.finish__btn {
+  padding: 18px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.finish__btn svg {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
 @media (max-width: 1199.98px) {
   .container {
     max-width: 1170px;
@@ -791,6 +835,10 @@ p {
         -ms-flex: 0 0 40%;
             flex: 0 0 40%;
   }
+
+  .finish {
+    width: 70%;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -802,6 +850,10 @@ p {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%;
+  }
+
+  .finish {
+    width: 80%;
   }
 }
 
@@ -852,6 +904,10 @@ p {
   .aboutu__inputs {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+
+  .finish {
+    width: 100%;
   }
 }
 
@@ -943,5 +999,21 @@ p {
 
   .interested__titleitem {
     padding: 12px 15px;
+  }
+
+  .finish__icon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .finish__content {
+    margin-bottom: 30px;
+  }
+
+  .finish__btn {
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
   }
 }
